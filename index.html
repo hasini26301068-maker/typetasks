@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hasini's TaskFlow</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <h1>TaskFlow</h1>
+      <p id="stats" class="stats">0 to do · 0 in progress · 0 done</p>
+    </header>
+
+    <form id="task-form" class="input-group">
+      <input id="title" type="text" placeholder="What needs to be done?" required />
+      <button id="add" type="submit">Add Task</button>
+    </form>
+
+    <div id="filters" class="filter-bar">
+      <button type="button" data-filter="all" class="chip active">All</button>
+      <button type="button" data-filter="todo" class="chip">To Do</button>
+      <button type="button" data-filter="in-progress" class="chip">In Progress</button>
+      <button type="button" data-filter="done" class="chip">Done</button>
+    </div>
+
+    <ul id="list" class="task-list"></ul>
+  </main>
+
+  <!-- Load the compiled JS module -->
+  <script type="module" src="app.js"></script>
+</body>
+</html>
